@@ -1,3 +1,5 @@
+![Logo](https://github.com/analianai/Banco-de-Dados-Parte-01/blob/main/hd-header.png?raw=true)
+
 # Game Space Escape
 
 **Game Space Escape** é um jogo desenvolvido utilizando a biblioteca **Pygame**. O objetivo do jogo é desviar das bombas que caem do topo da tela, controlando um personagem na parte inferior. 
@@ -303,8 +305,19 @@ if __name__ == "__main__":
 </details>
 
 <details>
-<summary>3 - Quais as suas funcionalidades</summary>
+<summary>5 - Imagens do Jogo</summary>
 
+### Tela Inicial
+
+![Logo](assets/img/01.png)
+
+### Tela do Jogo
+
+![Logo](assets/img/02.png)
+
+### Tela Game Over
+
+![Logo](assets/img/03.png)
 
 </details>
 
