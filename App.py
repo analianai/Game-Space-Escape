@@ -130,6 +130,7 @@ def game_loop():
     enemy_list = []
     spawn_timer = 0
     score = 0
+    enemy_speed = 3  # Velocidade base dos inimigos
 
     run = True
     while run:
@@ -151,10 +152,15 @@ def game_loop():
         if keys[pygame.K_RIGHT] and player.right < WIDTH:
             player.move_ip(player_speed, 0)
 
+        # Aumentar a velocidade das bombas a cada 1000 pontos
+        if score % 1000 == 0 and score != 0:
+            enemy_speed += 1  # Aumenta a velocidade das bombas
+            score += 1  # Evita que a velocidade aumente várias vezes no mesmo ponto
+
         # Gerenciar Inimigos
         spawn_timer += 1
         if spawn_timer > 30:  # Cria um inimigo a cada 30 frames
-            spawn_enemy(enemy_list, random.randint(3, 8))
+            spawn_enemy(enemy_list, enemy_speed)
             spawn_timer = 0
         move_enemies(enemy_list)
         
