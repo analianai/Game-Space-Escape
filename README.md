@@ -103,7 +103,7 @@ Game_SpaceEscape/
 ├── images/
 │   ├── bomb.png
 │   └── player.png
-└── space_escape.py
+└── App.py
 ````
 
 - **space_escape.py**: Código principal do jogo.
